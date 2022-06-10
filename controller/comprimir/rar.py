@@ -65,7 +65,7 @@ def decompress(nombre):
                 rmtree('./static/image/desc')
                 
                 archivor=os.getcwd()
-                archivo1=archivor +"\static\descomprimido"
+                archivo1=archivor +"/static/descomprimido"
                 lugar=os.listdir(archivo1)
                 narchivos=int(len(lugar))
                 print("mis archivos")
