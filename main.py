@@ -184,6 +184,7 @@ def descomprimi():
 
 @app.post("/dezip")
 def descomprimipost():
+    
     archivos=rar.decompress(nombre=request.files['archivo'])
     return render_template("/zip/archi.html",archivos=archivos) 
  

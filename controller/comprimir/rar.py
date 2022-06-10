@@ -36,8 +36,16 @@ def compress(ruta,nombre):
         flash(forms[4], 'info')
     
 def decompress(nombre):
-    rmtree('./static/descomprimido')
-    os.mkdir('./static/descomprimido')
+    
+    
+   
+    if os.path.isdir('./static/descomprimido') == True:
+        print("---------------SE ELIMINO LA CARPERTA--------------------")
+        rmtree('./static/descomprimido')
+    else:
+        print("---------------SE CREO LA CARPETA------------------------")
+        os.mkdir('./static/descomprimido')
+    
     
     if nombre.filename == '':
         flash("Debes seleccionar algun documento", 'danger')
