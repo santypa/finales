@@ -69,8 +69,6 @@ def decompress(nombre):
                     archivos=comprimir.misarchivos()
                     
                 return archivos
-                #archivos=comprimir.misarchivos()
-                #return render_template("/zip/archi.html",archivos)
             else:
                 a=2
         
@@ -80,6 +78,5 @@ def decompress(nombre):
         
         
         
-        #forms = comprimir.verzip()
-        
+ 
         
